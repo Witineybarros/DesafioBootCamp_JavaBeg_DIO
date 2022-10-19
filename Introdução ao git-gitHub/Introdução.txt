@@ -1,0 +1,17 @@
+Introdução ao Git e gitHub
+
+vimos a importancia do repositorio livre para que a comunidade interaja e de alguma forma
+possa dar suporte naquilo que possa ser melhorado...
+
+a importancia do Bash que é uma otimização do processo local como git e tambem por sua vez
+como a exportação dos arquivos para o REP- on(gitHUb)
+
+comandos basicos como 
+- clone ( faz uma copia do REP - HUB para o seu REP-LOCAL)
+- init ( inicia o repositorio local)
+- status ( vizualizar se houve ou não alterações no arquivo)
+- ls (lista todos os arquivos contido no REP local)
+- add . ( preparar os arqvivos para  o rep local para depois ser add a nuvem)
+- -commit "" (que é a forma de fazer o comentario referenciando aquilo que esta sendo alterado no seu projeto)
+- push ( comando que faz a exportação do git ao gitHub).
+- pull ( que é a forma de voce trazer seus arquivos da nuvem para o rep local caso tenha algum conflito no push)
