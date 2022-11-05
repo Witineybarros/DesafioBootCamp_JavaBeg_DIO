@@ -3,8 +3,10 @@ package dominio;
 import java.time.LocalDate;
 
 public class app {
-
+    
     public static void main(String[] args) {
+        
+       
         Curso curso1 = new Curso("Curso Java", "Linguagem de progamação em Java", 8);
         Curso curso2 = new Curso("Curso Js", "Linguagem de progamação em Java Script", 4);
 
