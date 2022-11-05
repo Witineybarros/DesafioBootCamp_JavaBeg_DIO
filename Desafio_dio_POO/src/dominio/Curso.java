@@ -5,9 +5,9 @@ public class Curso extends Conteudo {
     private int cargaHoraria;
 
     // CONTRUTOR //
-    public Curso(String titulo, String descrição, int cargaHoraria) {
+    public Curso(String titulo, String descricao, int cargaHoraria) {
         this.setTitulo(titulo);
-        this.setDescrição(descrição);
+        this.setDescricao(descricao);
         this.cargaHoraria = cargaHoraria;
     }
 
@@ -34,7 +34,7 @@ public class Curso extends Conteudo {
     public String toString() {
         return "------ C U R S O ------\n"
                 + "Titulo: " + getTitulo() + "\n"
-                + "Descrição: " + getDescrição() + "\n"
+                + "Descrição: " + getDescricao() + "\n"
                 + "Carga Horaria: " + cargaHoraria;
     }
 

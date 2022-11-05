@@ -7,9 +7,9 @@ public class Mentoria extends Conteudo {
     private LocalDate data;
 
     // CONTRUTOR //
-    public Mentoria(String titulo, String descrição, LocalDate data) {
+    public Mentoria(String titulo, String descricao, LocalDate data) {
         this.setTitulo(titulo);
-        this.setDescrição(descrição);
+        this.setDescricao(descricao);
         this.data = data;
     }
 
@@ -32,7 +32,7 @@ public class Mentoria extends Conteudo {
     public String toString() {
         return "------ M E N T O R I A ------\n"
                 + "Titulo: " + getTitulo() + "\n"
-                + "Descrição: " + getDescrição() + "\n"
+                + "Descrição: " + getDescricao() + "\n"
                 + "Data: " + data;
     }
 
