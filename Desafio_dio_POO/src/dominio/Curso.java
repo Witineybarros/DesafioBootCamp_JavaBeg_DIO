@@ -1,33 +1,21 @@
 package dominio;
 
-public class Curso {
+public class Curso extends Conteudo {
 
-    private String titulo;
-    private String descrição;
     private int cargaHoraria;
 
+    // CONTRUTOR //
     public Curso(String titulo, String descrição, int cargaHoraria) {
-        this.titulo = titulo;
-        this.descrição = descrição;
+        this.setTitulo(titulo);
+        this.setDescrição(descrição);
         this.cargaHoraria = cargaHoraria;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public Curso() {
+
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescrição() {
-        return descrição;
-    }
-
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
-    }
-
+    // GET - SET //
     public int getCargaHoraria() {
         return cargaHoraria;
     }
@@ -36,13 +24,18 @@ public class Curso {
         this.cargaHoraria = cargaHoraria;
     }
 
+    // M E T O D O S //
     @Override
-    public String toString() {
-        return  "------ C U R S O ------\n"
-              + "Titulo: " + titulo + "\n" 
-              + "Descrição: " + descrição + "\n"
-              + "Carga Horaria: " + cargaHoraria;
+    public double calcularXP() {
+        return XP_PADRAO * cargaHoraria;
     }
 
-    
+    @Override
+    public String toString() {
+        return "------ C U R S O ------\n"
+                + "Titulo: " + getTitulo() + "\n"
+                + "Descrição: " + getDescrição() + "\n"
+                + "Carga Horaria: " + cargaHoraria;
+    }
+
 }
